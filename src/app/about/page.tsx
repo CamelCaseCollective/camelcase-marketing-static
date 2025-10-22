@@ -2,11 +2,11 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Border } from '@/components/Border'
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
@@ -190,7 +190,10 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <InteriorPageHero
+        eyebrow="About us"
+        title="Our strength is collaboration"
+      >
         <p>
           We believe that our strength lies in our collaborative approach, which
           puts our clients at the center of everything we do.
@@ -209,7 +212,7 @@ export default async function About() {
             ask that they keep themselves there until at least 6:30pm.
           </p>
         </div>
-      </PageIntro>
+      </InteriorPageHero>
       <Container className="mt-16">
         <StatList>
           <StatListItem value="35" label="Underpaid employees" />
@@ -229,7 +232,12 @@ export default async function About() {
         pages={blogArticles}
       />
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

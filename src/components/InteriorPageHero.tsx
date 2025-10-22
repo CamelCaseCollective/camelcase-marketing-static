@@ -2,8 +2,9 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+import { GridPattern } from './GridPattern'
 
-export function PageIntro({
+function InteriorPageHero({
   eyebrow,
   title,
   children,
@@ -16,8 +17,13 @@ export function PageIntro({
 }) {
   return (
     <Container
-      className={clsx('mt-24 sm:mt-32 lg:mt-40', centered && 'text-center')}
+      className={clsx('relative mt-24 sm:mt-32 lg:mt-40', centered && 'text-center')}
     >
+      <GridPattern
+        className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"
+        yOffset={-96}
+        interactive
+      />
       <FadeIn>
         <h1>
           <span className="block font-display text-base font-semibold text-neutral-950">
@@ -45,3 +51,5 @@ export function PageIntro({
     </Container>
   )
 }
+
+export default InteriorPageHero

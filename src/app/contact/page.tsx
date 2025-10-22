@@ -7,7 +7,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { SocialMedia } from '@/components/SocialMedia'
 import { RootLayout } from '@/components/RootLayout'
 
@@ -149,9 +149,9 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
+      <InteriorPageHero eyebrow="Contact us" title="Let’s work together">
         <p>We can’t wait to hear from you.</p>
-      </PageIntro>
+      </InteriorPageHero>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">

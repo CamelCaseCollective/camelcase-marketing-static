@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { RootLayout } from '@/components/RootLayout'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
@@ -23,16 +23,17 @@ export default async function Blog() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <InteriorPageHero eyebrow="Blog" title="The latest articles and news">
         <p>
           Stay up-to-date with the latest industry news as our marketing teams
           finds new ways to re-purpose old CSS tricks articles.
         </p>
-      </PageIntro>
+      </InteriorPageHero>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="space-y-24 lg:space-y-32">
-          {articles.map((article) => (
+          Default blog content
+          {/* {articles.map((article) => (
             <FadeIn key={article.href}>
               <article>
                 <Border className="pt-16">
@@ -80,11 +81,16 @@ export default async function Blog() {
                 </Border>
               </article>
             </FadeIn>
-          ))}
+          ))} */}
         </div>
       </Container>
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

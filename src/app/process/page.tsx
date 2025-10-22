@@ -1,13 +1,13 @@
 import { type Metadata } from 'next'
 
 import { Blockquote } from '@/components/Blockquote'
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { GridPattern } from '@/components/GridPattern'
 import { List, ListItem } from '@/components/List'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
@@ -57,7 +57,8 @@ function Section({
 function Discover() {
   return (
     <Section title="Discover" image={{ src: imageWhiteboard }}>
-      <div className="space-y-6 text-base text-neutral-600">
+      <div>Default process content</div>
+      {/* <div className="space-y-6 text-base text-neutral-600">
         <p>
           We work closely with our clients to understand their{' '}
           <strong className="font-semibold text-neutral-950">needs</strong> and
@@ -90,7 +91,7 @@ function Discover() {
         <TagListItem>Employee surveys</TagListItem>
         <TagListItem>Proofs-of-concept</TagListItem>
         <TagListItem>Forensic audit</TagListItem>
-      </TagList>
+      </TagList> */}
     </Section>
   )
 }
@@ -249,13 +250,13 @@ export const metadata: Metadata = {
 export default function Process() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <InteriorPageHero eyebrow="Our process" title="How we work">
         <p>
           We believe in efficiency and maximizing our resources to provide the
           best value to our clients. The primary way we do that is by re-using
           the same five projects we’ve been developing for the past decade.
         </p>
-      </PageIntro>
+      </InteriorPageHero>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />
@@ -265,7 +266,12 @@ export default function Process() {
 
       <Values />
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

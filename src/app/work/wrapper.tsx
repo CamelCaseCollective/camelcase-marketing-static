@@ -1,9 +1,9 @@
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/components/MDXComponents'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
@@ -24,9 +24,13 @@ export default async function CaseStudyLayout({
     <RootLayout>
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <PageIntro eyebrow="Case Study" title={caseStudy.title} centered>
+          <InteriorPageHero
+            eyebrow="Case Study"
+            title={caseStudy.title}
+            centered
+          >
             <p>{caseStudy.description}</p>
-          </PageIntro>
+          </InteriorPageHero>
 
           <FadeIn>
             <div className="mt-24 border-t border-neutral-200 bg-white/50 sm:mt-32 lg:mt-40">
@@ -83,7 +87,12 @@ export default async function CaseStudyLayout({
         />
       )}
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }
