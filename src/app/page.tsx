@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import CallToAction from '@/components/CallToAction'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import HomepageHero from '@/components/HomepageHero'

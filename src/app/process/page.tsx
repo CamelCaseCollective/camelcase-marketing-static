@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 
 import { Blockquote } from '@/components/Blockquote'
-import CallToAction from '@/components/CallToAction'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'

@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Border } from '@/components/Border'
-import CallToAction from '@/components/CallToAction'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'

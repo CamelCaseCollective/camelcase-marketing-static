@@ -1,4 +1,4 @@
-import CallToAction from '@/components/CallToAction'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { MDXComponents } from '@/components/MDXComponents'

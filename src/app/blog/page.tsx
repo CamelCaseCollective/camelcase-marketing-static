@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
-import CallToAction from '@/components/CallToAction'
+import CallToAction from '@/components/blocks/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import InteriorPageHero from '@/components/InteriorPageHero'
