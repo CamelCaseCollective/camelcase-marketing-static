@@ -57,7 +57,8 @@ function Section({
 function Discover() {
   return (
     <Section title="Discover" image={{ src: imageWhiteboard }}>
-      <div className="space-y-6 text-base text-neutral-600">
+      <div>Default process content</div>
+      {/* <div className="space-y-6 text-base text-neutral-600">
         <p>
           We work closely with our clients to understand their{' '}
           <strong className="font-semibold text-neutral-950">needs</strong> and
@@ -90,7 +91,7 @@ function Discover() {
         <TagListItem>Employee surveys</TagListItem>
         <TagListItem>Proofs-of-concept</TagListItem>
         <TagListItem>Forensic audit</TagListItem>
-      </TagList>
+      </TagList> */}
     </Section>
   )
 }
