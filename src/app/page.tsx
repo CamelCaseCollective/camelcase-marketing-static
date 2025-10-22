@@ -45,13 +45,13 @@ function Clients() {
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 flex flex-wrap justify-around gap-x-8 gap-y-10"
+            className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 justify-around gap-x-10 gap-y-14"
           >
             {clients.map(([client, Logo, services]) => (
-              <li key={client} className="flex">
+              <li key={client}>
                 <FadeIn className="w-full">
                   <Logo className="h-full w-full fill-white [&_path]:fill-white [&_line]:stroke-white" />
-                  <div className="flex gap-4 flex-wrap">
+                  <div className="mt-6 flex gap-4 flex-wrap">
                     {services.split(', ').map((service: string, index: number) =>
                       <div className="flex justify-center items-center text-white text-xs px-4 py-2 rounded-full border-2 border-white whitespace-nowrap" key={index}>{service}</div>
                     )}
