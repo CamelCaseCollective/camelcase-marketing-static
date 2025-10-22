@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 
 import { Blockquote } from '@/components/Blockquote'
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
@@ -266,7 +266,12 @@ export default function Process() {
 
       <Values />
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

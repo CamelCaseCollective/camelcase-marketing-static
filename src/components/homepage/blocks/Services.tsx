@@ -3,7 +3,7 @@ import React from 'react'
 
 function Services() {
   return (
-    <Container className="py-20">
+    <Container className="my-20">
         <div>
             <div className="text-center max-w-5xl mx-auto">
                 <h2 className="mb-4">Our Services</h2>

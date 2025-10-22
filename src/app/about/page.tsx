@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Border } from '@/components/Border'
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
@@ -190,7 +190,10 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <InteriorPageHero eyebrow="About us" title="Our strength is collaboration">
+      <InteriorPageHero
+        eyebrow="About us"
+        title="Our strength is collaboration"
+      >
         <p>
           We believe that our strength lies in our collaborative approach, which
           puts our clients at the center of everything we do.
@@ -229,7 +232,12 @@ export default async function About() {
         pages={blogArticles}
       />
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

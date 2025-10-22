@@ -1,4 +1,4 @@
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
@@ -24,7 +24,11 @@ export default async function CaseStudyLayout({
     <RootLayout>
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <InteriorPageHero eyebrow="Case Study" title={caseStudy.title} centered>
+          <InteriorPageHero
+            eyebrow="Case Study"
+            title={caseStudy.title}
+            centered
+          >
             <p>{caseStudy.description}</p>
           </InteriorPageHero>
 
@@ -83,7 +87,12 @@ export default async function CaseStudyLayout({
         />
       )}
 
-      <ContactSection />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { ContactSection } from '@/components/ContactSection'
+import CallToAction from '@/components/CallToAction'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import HomepageHero from '@/components/HomepageHero'
@@ -138,11 +138,14 @@ export default async function Home() {
   return (
     <RootLayout>
       <HomepageHero />
-      
-
       <Clients />
-
       <Services />
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
 
       {/* <CaseStudies caseStudies={caseStudies} /> */}
 
@@ -154,10 +157,6 @@ export default async function Home() {
         finding a way to access the user’s microphone without triggering one of
         those annoying permission dialogs.
       </Testimonial> */}
-
-      {/* <Services /> */}
-
-      <ContactSection />
     </RootLayout>
   )
 }
