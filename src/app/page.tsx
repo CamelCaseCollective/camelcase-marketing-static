@@ -24,12 +24,12 @@ import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 
 const clients = [
-  ['The Dispatch', TheDispatchLogo],
-  ['SCOTUSblog', ScotusBlogLogo],
-  ['Code Climate', CodeClimateLogo],
-  ['Stripes', StripesLogo],
-  ['Bowery Capital', BoweryCapitalLogo],
-  ['Babel Street', BabelStreetLogo]
+  ['The Dispatch', TheDispatchLogo, 'Custom Integrations, Development, UX'],
+  ['SCOTUSblog', ScotusBlogLogo, 'Development, UX'],
+  ['Code Climate', CodeClimateLogo, 'AX, Development, Performance, UI/UX'],
+  ['Stripes', StripesLogo, 'AX, Development, Performance, UI/UX'],
+  ['Bowery Capital', BoweryCapitalLogo, 'AX, Development, Performance, UI/UX'],
+  ['Babel Street', BabelStreetLogo, 'AX, Development, Performance, UI/UX']
 ]
 
 function Clients() {
@@ -47,10 +47,15 @@ function Clients() {
             role="list"
             className="mt-10 flex flex-wrap justify-around gap-x-8 gap-y-10"
           >
-            {clients.map(([client, Logo]) => (
-              <li key={client} className="flex justify-center items-center max-w-[250px]">
+            {clients.map(([client, Logo, services]) => (
+              <li key={client} className="flex">
                 <FadeIn className="w-full">
                   <Logo className="h-full w-full fill-white [&_path]:fill-white [&_line]:stroke-white" />
+                  <div className="flex gap-4 flex-wrap">
+                    {services.split(', ').map((service: string, index: number) =>
+                      <div className="flex justify-center items-center text-white text-xs px-4 py-2 rounded-full border-2 border-white whitespace-nowrap" key={index}>{service}</div>
+                    )}
+                  </div>
                 </FadeIn>
               </li>
             ))}
