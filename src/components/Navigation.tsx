@@ -2,6 +2,8 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 
+// TODO: make this simpler so I can call it anywhere. Seems like overkill right now
+
 function NavigationRow({ children }: { children: React.ReactNode }) {
   return (
     <div className="even:mt-px sm:bg-neutral-950">
