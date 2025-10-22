@@ -7,7 +7,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { GridPattern } from '@/components/GridPattern'
 import { List, ListItem } from '@/components/List'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
@@ -250,13 +250,13 @@ export const metadata: Metadata = {
 export default function Process() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <InteriorPageHero eyebrow="Our process" title="How we work">
         <p>
           We believe in efficiency and maximizing our resources to provide the
           best value to our clients. The primary way we do that is by re-using
           the same five projects we’ve been developing for the past decade.
         </p>
-      </PageIntro>
+      </InteriorPageHero>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />

@@ -8,7 +8,7 @@ import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { PageIntro } from '@/components/PageIntro'
+import InteriorPageHero from '@/components/InteriorPageHero'
 import { Testimonial } from '@/components/Testimonial'
 import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
 import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
@@ -148,7 +148,7 @@ export default async function Work() {
 
   return (
     <RootLayout>
-      <PageIntro
+      <InteriorPageHero
         eyebrow="Our work"
         title="Proven solutions for real-world problems."
       >
@@ -157,7 +157,7 @@ export default async function Work() {
           best value to our clients. The primary way we do that is by re-using
           the same five projects we’ve been developing for the past decade.
         </p>
-      </PageIntro>
+      </InteriorPageHero>
 
       <CaseStudies caseStudies={caseStudies} />
 
