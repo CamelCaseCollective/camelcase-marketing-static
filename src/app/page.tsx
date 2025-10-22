@@ -45,12 +45,12 @@ function Clients() {
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-3"
+            className="mt-10 flex flex-wrap justify-around gap-x-8 gap-y-10"
           >
             {clients.map(([client, Logo]) => (
-              <li key={client} className="flex justify-center">
-                <FadeIn className="w-full max-w-[200px]">
-                  <Logo className="h-auto w-full fill-white [&_path]:fill-white [&_line]:stroke-white" />
+              <li key={client} className="flex justify-center items-center max-w-[250px]">
+                <FadeIn className="w-full">
+                  <Logo className="h-full w-full fill-white [&_path]:fill-white [&_line]:stroke-white" />
                 </FadeIn>
               </li>
             ))}
