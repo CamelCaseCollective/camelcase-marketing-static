@@ -10,28 +10,26 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+
+// Logos
+import theDispatchLogo from '@/svgs/clients/the-dispatch.svg'
+import scotusBlogLogo from '@/svgs/clients/scotus-blog.svg'
+import codeClimateLogo from '@/svgs/clients/code-climate.svg'
+import stripesLogo from '@/svgs/clients/stripes.svg'
+import boweryCapitalLogo from '@/svgs/clients/bowery-capital.svg'
+import babelStreetLogo from '@/svgs/clients/babel-street.svg'
+
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['The Dispatch', theDispatchLogo],
+  ['SCOTUSblog', scotusBlogLogo],
+  ['Code Climate', codeClimateLogo],
+  ['Stripes', stripesLogo],
+  ['Bowery Capital', boweryCapitalLogo],
+  ['Babel Street', babelStreetLogo]
 ]
 
 function Clients() {
@@ -40,7 +38,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Our Highlights
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -193,7 +191,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Declan', logo: theDispatchLogo }}
       >
         The team at Studio went above and beyond with our onboarding, even
         finding a way to access the user’s microphone without triggering one of
