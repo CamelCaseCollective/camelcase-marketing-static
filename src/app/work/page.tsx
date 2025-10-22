@@ -9,7 +9,6 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import InteriorPageHero from '@/components/InteriorPageHero'
-import { Testimonial } from '@/components/Testimonial'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
@@ -114,16 +113,15 @@ function Clients() {
           role="list"
           className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
         >
-          {/* {clients.map(([client, logo]) => ( */}
-          {clients.map(([client]) => (
+          {/* {clients.map(([client, logo]) => (
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
-                  {/* <Image src={logo} alt={client} unoptimized /> */}
+                  <Image src={logo} alt={client} unoptimized />
                 </Border>
               </FadeIn>
             </li>
-          ))}
+          ))} */}
         </ul>
       </FadeInStagger>
     </Container>
@@ -154,13 +152,13 @@ export default async function Work() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
         We approached <em>Studio</em> because we loved their past work. They
         delivered something remarkably similar in record time.
-      </Testimonial>
+      </Testimonial> */}
 
       <Clients />
 
