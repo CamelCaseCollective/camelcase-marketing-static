@@ -4,9 +4,11 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Studio',
-    default: 'Developer studio for media publications based in Baltimore, MD.',
+    template: '%s - camelCase Collective',
+    default: 'Product & engineering studio to help media publications scale.',
   },
+  description:
+    'We help media organizations scale smarter by empowering lean teams with systems that grow, adapt, and thrive.',
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

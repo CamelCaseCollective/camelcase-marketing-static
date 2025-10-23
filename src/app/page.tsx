@@ -3,12 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import CallToAction from '@/components/blocks/CallToAction'
-import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import HomepageHero from '@/components/HomepageHero'
-import { List, ListItem } from '@/components/List'
-import { SectionIntro } from '@/components/SectionIntro'
-import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 
 import { loadCaseStudies } from '@/lib/mdx'
@@ -22,33 +17,30 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-    return (
+  return (
     <RootLayout>
       <HomepageHero />
       <Clients />
       <Services />
-      <CallToAction
-        headline="Ready to level up your stack?"
-        description="Partner with us to design smarter systems built for scale."
-        buttonText="Contact Us"
-        buttonLink="/contact"
-      />
-
-      {/* <CaseStudies caseStudies={caseStudies} /> */}
-
       <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
+        className=""
         client={{
           name: 'Declan Garvey',
           subtitle: 'Executive Editor at The Dispatch',
         }}
       >
         From conception to execution, we couldn’t be more thrilled with the
-        incredible work CamelCase did redesigning The Dispatch&apos;s website, laying
-        the foundation for a new growth trajectory. We now have a website worthy
-        of the quality of the work our team produces on a daily basis, and the
-        transformation has exceeded all our expectations.
+        incredible work CamelCase did redesigning The Dispatch&apos;s website,
+        laying the foundation for a new growth trajectory. We now have a website
+        worthy of the quality of the work our team produces on a daily basis,
+        and the transformation has exceeded all our expectations.
       </Testimonial>
+      <CallToAction
+        headline="Ready to level up your stack?"
+        description="Partner with us to design smarter systems built for scale."
+        buttonText="Contact Us"
+        buttonLink="/contact"
+      />
     </RootLayout>
   )
 }

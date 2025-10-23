@@ -51,9 +51,9 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function Footer() {
   return (
-    <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
+    <Container as="footer" className="mt-12 w-full sm:mt-16 lg:mt-20">
       <FadeIn viewport={{ once: true, margin: '0px' }}>
-        <div className="flex flex-col md:flex-row md:justify-between gap-x-8 gap-y-16">
+        <div className="flex flex-col gap-x-8 gap-y-16 md:flex-row md:justify-between">
           <Link href="/" aria-label="Home">
             <Logo className="h-8 w-40" />
           </Link>
