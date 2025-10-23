@@ -72,20 +72,20 @@ export default async function CaseStudyLayout({
           </FadeIn>
         </header>
 
-        <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <Container className="mt-10 sm:mt-16 lg:mt-20">
           <FadeIn>
             <MDXComponents.wrapper>{children}</MDXComponents.wrapper>
           </FadeIn>
         </Container>
       </article>
 
-      {moreCaseStudies.length > 0 && (
+      {/* {moreCaseStudies.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
           title="More case studies"
           pages={moreCaseStudies}
         />
-      )}
+      )} */}
 
       <CallToAction
         headline="Ready to level up your stack?"

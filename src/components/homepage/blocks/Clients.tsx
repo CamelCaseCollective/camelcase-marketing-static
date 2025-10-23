@@ -3,10 +3,7 @@ import Link from 'next/link'
 // Logos as React components (for inline SVG)
 import TheDispatchLogo from '@/svgs/clients/the-dispatch.svg'
 import ScotusBlogLogo from '@/svgs/clients/scotus-blog.svg'
-import CodeClimateLogo from '@/svgs/clients/code-climate.svg'
 import StripesLogo from '@/svgs/clients/stripes.svg'
-import BoweryCapitalLogo from '@/svgs/clients/bowery-capital.svg'
-import BabelStreetLogo from '@/svgs/clients/babel-street.svg'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 

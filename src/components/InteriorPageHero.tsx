@@ -16,9 +16,7 @@ function InteriorPageHero({
   centered?: boolean
 }) {
   return (
-    <Container
-      className={clsx('relative mt-24 sm:mt-32 lg:mt-40', centered && 'text-center')}
-    >
+    <Container className={clsx('pt-20', centered && 'text-center')}>
       <GridPattern
         className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"
         yOffset={-96}

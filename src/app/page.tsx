@@ -157,7 +157,7 @@ export default async function Home() {
         }}
       >
         From conception to execution, we couldn’t be more thrilled with the
-        incredible work CamelCase did redesigning The Dispatch's website, laying
+        incredible work CamelCase did redesigning The Dispatch&apos;s website, laying
         the foundation for a new growth trajectory. We now have a website worthy
         of the quality of the work our team produces on a daily basis, and the
         transformation has exceeded all our expectations.
