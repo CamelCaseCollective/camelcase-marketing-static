@@ -13,12 +13,13 @@ function HomepageHero() {
       />
       <FadeIn className="max-w-3xl">
         <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-6xl">
-          Helping build the future of media with specialized product &
-          engineering experts.
+          The best media products happen when editorial, growth, and technology
+          align.
         </h1>
         <h2 className="mt-5 font-display text-2xl font-medium text-neutral-950">
-          We partner with publications to help them unlock their full potential
-          with systems that grow, adapt, and thrive.
+          We're the fractional team that bridges all three—helping you unlock
+          the media products your audience deserves, without increasing
+          headcount.
         </h2>
         {/* <p className="text-l mt-2 text-neutral-600">
           From migrations to integrations, we design, build, and optimize the
