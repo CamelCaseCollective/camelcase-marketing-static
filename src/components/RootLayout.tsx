@@ -44,7 +44,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
     >
       <header>
         <div
-          className="absolute top-2 right-0 left-0 z-40 pt-14"
+          className="absolute top-2 right-0 left-0 z-40 pt-10"
           aria-hidden={expanded ? 'true' : undefined}
           // @ts-ignore - inert is a valid HTML attribute
           inert={expanded ? true : undefined}

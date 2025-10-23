@@ -13,18 +13,18 @@ function HomepageHero() {
       />
       <FadeIn className="max-w-3xl">
         <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-6xl">
-          Helping build the future of media - specialized experts that scale
-          with you.
+          Helping build the future of media with specialized product &
+          engineering experts.
         </h1>
         <h2 className="mt-8 font-display text-2xl font-medium text-neutral-950">
-          We help media organizations scale smarter by empowering lean teams
+          We partner with publications to help them unlock their full potential
           with systems that grow, adapt, and thrive.
         </h2>
-        <p className="text-l mt-2 text-neutral-600">
+        {/* <p className="text-l mt-2 text-neutral-600">
           From migrations to integrations, we design, build, and optimize the
           platforms that keep your publication running. We focus on stability,
-          growth, and new revenue, all without adding headcount.
-        </p>
+          growth, and new revenue with lean, embedded teams that scale with you.
+        </p> */}
       </FadeIn>
     </Container>
   )

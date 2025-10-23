@@ -8,15 +8,13 @@ function Services() {
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="mb-4">Our Services</h2>
           <p>
-            We build content-first websites and publishing platforms that scale.
-            From stable back-end systems to seamless front-end experiences, we
-            connect newsletters, syndication feeds, and metadata pipelines—so
-            your team can focus on publishing, not firefighting.
+            From migrations to integrations, we design, build, and optimize the
+            platforms that keep your publication running. We focus on stability,
+            growth, and new revenue with lean, embedded teams that scale with
+            you.
           </p>
         </div>
         <div className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          {/* TODO: Move icons to include or install fa icons */}
-          {/* https://docs.fontawesome.com/web/use-with/react/add-icons */}
           <div className="flex flex-col gap-4">
             <svg
               className="h-16 w-16"
@@ -27,8 +25,9 @@ function Services() {
             </svg>
             <h3>Full-Stack Development</h3>
             <p>
-              Engineering for the entire stack that media platforms use. From fast, responsive
-              frontends to scalable backend systems built to handle millions of readers.
+              Engineering for the entire stack that media platforms use. From
+              fast, responsive frontends to scalable backend systems built to
+              handle millions of readers.
             </p>
           </div>
 
