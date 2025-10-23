@@ -6,7 +6,6 @@ import CallToAction from '@/components/blocks/CallToAction'
 import HomepageHero from '@/components/HomepageHero'
 import { Testimonial } from '@/components/Testimonial'
 
-import { loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 import Clients from '@/components/homepage/blocks/Clients'
 import Services from '@/components/homepage/blocks/Services'

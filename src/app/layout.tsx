@@ -6,7 +6,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - camelCase Collective',
-    default: 'Product & engineering studio to help media publications scale.',
+    default: 'Helping digital media publications scale.',
   },
   description:
     'We help media organizations scale smarter by empowering lean teams with systems that grow, adapt, and thrive.',
