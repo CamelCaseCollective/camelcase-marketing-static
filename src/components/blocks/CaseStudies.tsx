@@ -47,7 +47,7 @@ const caseStudies: CaseStudyData[] = [
         role: 'Executive Editor at The Dispatch',
       },
       content:
-        "From conception to execution, we couldn't be more thrilled with the incredible work CamelCase did redesigning The Dispatch's website, laying the foundation for a new growth trajectory.",
+        "From conception to execution, we couldn't be more thrilled with the incredible work camelCase did redesigning The Dispatch's website, laying the foundation for a new growth trajectory.",
     },
   },
   {

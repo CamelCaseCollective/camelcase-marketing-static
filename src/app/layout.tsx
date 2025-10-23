@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next'
 
 import '@/styles/tailwind.css'
 
@@ -46,6 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </noscript>
         )}
         {children}
+        <Analytics />
       </body>
     </html>
   )
