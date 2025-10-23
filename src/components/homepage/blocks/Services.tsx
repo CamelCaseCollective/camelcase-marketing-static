@@ -7,7 +7,7 @@ function Services() {
       <div>
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="mb-4">Our Services</h2>
-          <p>
+          <p className="text-lg">
             From migrations to integrations, we design, build, and optimize the
             platforms that keep your publication running. We focus on stability,
             growth, and new revenue with lean, embedded teams that scale with
