@@ -41,3 +41,8 @@
 
   --font-display-length: 2;
 }
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
