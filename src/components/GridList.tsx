@@ -39,7 +39,7 @@ export function GridListItem({
   return (
     <li
       className={clsx(
-        'text-base',
+        'text-lg',
         invert
           ? 'text-neutral-300 before:bg-white after:bg-white/10'
           : 'text-neutral-600 before:bg-neutral-950 after:bg-neutral-100',

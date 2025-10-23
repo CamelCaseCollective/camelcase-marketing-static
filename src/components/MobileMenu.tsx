@@ -43,7 +43,7 @@ export function MobileMenu({
           />
         </div>
         <Navigation />
-        <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
+        {/* <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
           <Container>
             <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
               <div>
@@ -63,7 +63,7 @@ export function MobileMenu({
               </div>
             </div>
           </Container>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   )

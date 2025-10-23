@@ -19,14 +19,14 @@ const clients = [
     name: 'SCOTUSblog',
     logo: ScotusBlogLogo,
     services: 'Development, Systems Migration, Product Development',
-    url: '/work/scotusblog',
-    linkText: 'View case study',
+    url: 'https://www.scotusblog.com',
+    linkText: 'View website',
   },
   {
     name: 'Stripes',
     logo: StripesLogo,
     services: 'Development, Performance, Author Experience',
-    url: 'https://stripes.co',
+    url: 'https://www.stripes.co',
     linkText: 'View website',
   },
   //   {
