@@ -16,7 +16,7 @@ function HomepageHero() {
           Helping build the future of media with specialized product &
           engineering experts.
         </h1>
-        <h2 className="mt-8 font-display text-2xl font-medium text-neutral-950">
+        <h2 className="mt-5 font-display text-2xl font-medium text-neutral-950">
           We partner with publications to help them unlock their full potential
           with systems that grow, adapt, and thrive.
         </h2>
