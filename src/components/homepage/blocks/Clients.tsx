@@ -69,7 +69,7 @@ function Clients() {
               <li key={client.name}>
                 <FadeIn className="w-full">
                   <div className="flex h-[100px] w-full items-center justify-center">
-                    <client.logo className="max-h-[100px] max-w-[200px] fill-white [&_line]:stroke-white [&_path]:fill-white" />
+                    <client.logo className="h-full max-h-[100px] w-full max-w-[200px] fill-white [&_line]:stroke-white [&_path]:fill-white" />
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">
