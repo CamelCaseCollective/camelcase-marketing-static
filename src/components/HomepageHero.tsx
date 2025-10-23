@@ -17,8 +17,8 @@ function HomepageHero() {
           align.
         </h1>
         <h2 className="mt-5 font-display text-2xl font-medium text-neutral-950">
-          We&apos;re the fractional team that bridges all three—helping you unlock
-          the media products your audience deserves, without increasing headcount.
+          We&apos;re the fractional team that bridges all three—helping you
+          unlock the products your audience loves, without increasing headcount.
         </h2>
       </FadeIn>
     </Container>
