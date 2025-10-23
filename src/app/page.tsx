@@ -149,14 +149,19 @@ export default async function Home() {
 
       {/* <CaseStudies caseStudies={caseStudies} /> */}
 
-      {/* <Testimonial
+      <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Declan', logo: theDispatchLogoUrl }}
+        client={{
+          name: 'Declan Garvey',
+          subtitle: 'Executive Editor at The Dispatch',
+        }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial> */}
+        From conception to execution, we couldn’t be more thrilled with the
+        incredible work CamelCase did redesigning The Dispatch's website, laying
+        the foundation for a new growth trajectory. We now have a website worthy
+        of the quality of the work our team produces on a daily basis, and the
+        transformation has exceeded all our expectations.
+      </Testimonial>
     </RootLayout>
   )
 }

@@ -89,7 +89,6 @@ import Clients from '@/components/homepage/blocks/Clients'
 //   )
 // }
 
-
 export const metadata: Metadata = {
   title: 'Our Work',
   description:
