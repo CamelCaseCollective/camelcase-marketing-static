@@ -16,12 +16,11 @@ export default function Work() {
     <RootLayout>
       <InteriorPageHero
         eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        title="A selection of recent collaborations with media and content-driven businesses."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we&apos;ve been developing for the past decade.
+          We build scalable, content-first platforms that prioritize growth,
+          performance, editorial experience, and seamless integration.
         </p>
       </InteriorPageHero>
 
