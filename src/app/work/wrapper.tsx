@@ -79,14 +79,6 @@ export default async function CaseStudyLayout({
         </Container>
       </article>
 
-      {/* {moreCaseStudies.length > 0 && (
-        <PageLinks
-          className="mt-24 sm:mt-32 lg:mt-40"
-          title="More case studies"
-          pages={moreCaseStudies}
-        />
-      )} */}
-
       <CallToAction
         headline="Ready to level up your stack?"
         description="Partner with us to design smarter systems built for scale."
