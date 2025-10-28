@@ -22,7 +22,7 @@ export default async function CaseStudyLayout({
 
   return (
     <RootLayout>
-      <article className="mt-24 sm:mt-32 lg:mt-40">
+      <article className="">
         <header>
           <InteriorPageHero
             eyebrow="Case Study"
@@ -33,7 +33,7 @@ export default async function CaseStudyLayout({
           </InteriorPageHero>
 
           <FadeIn>
-            <div className="mt-24 border-t border-neutral-200 bg-white/50 sm:mt-32 lg:mt-40">
+            <div className="mt-12 border-t border-neutral-200 bg-white/50 md:mt-16 lg:mt-20 xl:mt-24">
               <Container>
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-neutral-950 sm:mx-0 sm:grid-cols-3">
