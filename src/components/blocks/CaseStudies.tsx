@@ -60,7 +60,7 @@ const caseStudies: CaseStudyData[] = [
       'SCOTUSblog required a complete systems migration to support their expanding coverage of Supreme Court proceedings and legal analysis.',
       'Our team delivered a scalable solution that improved site performance by 60% while maintaining their reputation for authoritative legal journalism.',
     ],
-    href: '/work/scotusblog',
+    href: 'https://www.scotusblog.com',
   },
   {
     client: 'Stripes',
@@ -72,7 +72,7 @@ const caseStudies: CaseStudyData[] = [
       'Stripes needed to streamline their content creation workflow while improving the reading experience for their diverse audience.',
       'We developed custom tools that reduced publishing time by 50% and implemented performance optimizations that led to a 35% increase in page views.',
     ],
-    href: '',
+    href: 'https://www.stripes.co',
   },
 ]
 
@@ -120,7 +120,9 @@ function CaseStudies() {
                         href={caseStudy.href}
                         aria-label={`Read case study: ${caseStudy.client}`}
                       >
-                        Read case study
+                        {caseStudy.href.includes('https://')
+                          ? 'View website'
+                          : 'Read case study'}
                       </Button>
                     </div>
                   )}
