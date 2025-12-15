@@ -23,7 +23,7 @@
     "escape-string-regexp": "^5.0.0",
     "fast-glob": "^3.3.3",
     "framer-motion": "^12.23.11",
-    "next": "^16.0.7",
+    "next": "16.0.10",
     "react": "^19",
     "react-dom": "^19",
     "recma-import-images": "0.0.3",
